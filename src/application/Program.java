@@ -9,6 +9,7 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         
+        /* Exercicio 1
         int n = 0;
         do{
         System.out.println("Quantos números você vai digitar?");
@@ -29,7 +30,12 @@ public class Program {
                 System.out.println (vect[i]);
             }
         }
-
+        */
+        
+        
+        
+        
+        
         sc.close();
     }
     
