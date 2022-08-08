@@ -32,9 +32,27 @@ public class Program {
         }
         */
         
+        /* Exercicio 2
+        int n;
+        System.out.println("Quantos numeros você vai digitar? ");
+        n = sc.nextInt();
+        double[] vect = new double[n];
+        double sum = 0;
         
+        for (int i = 0; i < vect.length; i++){
+            System.out.print("Digite um numero: ");
+            vect[i] = sc.nextDouble();
+            sum += vect[i];
+        }
         
-        
+        System.out.print("VALORES = ");
+        for (int i = 0; i < vect.length; i++){
+            System.out.print(vect[i] + " ");
+        }
+        System.out.println();
+        System.out.println("SOMA = " + sum);
+        System.out.println("MEDIA = " + sum/vect.length);
+        */
         
         sc.close();
     }
