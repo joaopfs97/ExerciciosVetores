@@ -55,31 +55,43 @@ public class Program {
         System.out.println("MEDIA = " + sum/vect.length);
         */
         
+        /* Exercicio 3
         int n;
         System.out.println("Quantos pessoas serão digitadas?");
         n = sc.nextInt();
         Pessoa[] vect = new Pessoa[n];
-        int sumAltura = 0;
-        int menores16Anos = 0;
+        double sumAltura = 0;
+        double menores16Anos = 0;
         
         
         for (int i = 0; i < vect.length; i++){
             System.out.println("Dados da " + (i+1) + "a pessoa:");
             System.out.print("Nome: ");
-            String nome = sc.nextLine();
-            System.out.println("Idade: ");
+            String nome = sc.next();
+            System.out.print("Idade: ");
             int idade = sc.nextInt();
+            
             if(idade < 16){
                 menores16Anos += 1;
             }
-            System.out.println("Altura: ");
+            System.out.print("Altura: ");
             double altura = sc.nextDouble();
             sumAltura += altura;
             vect[i] = new Pessoa(nome, idade, altura);
         }
         
+        double mediaAltura = sumAltura/vect.length;
+        System.out.println("Altura media: " + mediaAltura);
         
+        double porcentagem16Anos = (menores16Anos / vect.length) * 100;
+        System.out.println("Pessoas com mais de 16 anos: " + porcentagem16Anos + "%");
         
+        for (int i = 0; i < vect.length; i++){
+            if(vect[i].getIdade() < 16){
+                System.out.println(vect[i].getNome());
+            }
+        }
+        */
         
         sc.close();
     }
