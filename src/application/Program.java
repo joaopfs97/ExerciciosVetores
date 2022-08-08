@@ -1,5 +1,6 @@
 package application;
 
+import entities.Pessoa;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -53,6 +54,32 @@ public class Program {
         System.out.println("SOMA = " + sum);
         System.out.println("MEDIA = " + sum/vect.length);
         */
+        
+        int n;
+        System.out.println("Quantos pessoas serão digitadas?");
+        n = sc.nextInt();
+        Pessoa[] vect = new Pessoa[n];
+        int sumAltura = 0;
+        int menores16Anos = 0;
+        
+        
+        for (int i = 0; i < vect.length; i++){
+            System.out.println("Dados da " + (i+1) + "a pessoa:");
+            System.out.print("Nome: ");
+            String nome = sc.nextLine();
+            System.out.println("Idade: ");
+            int idade = sc.nextInt();
+            if(idade < 16){
+                menores16Anos += 1;
+            }
+            System.out.println("Altura: ");
+            double altura = sc.nextDouble();
+            sumAltura += altura;
+            vect[i] = new Pessoa(nome, idade, altura);
+        }
+        
+        
+        
         
         sc.close();
     }
