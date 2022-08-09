@@ -1,8 +1,11 @@
 package application;
 
-import entities.Reserva;
+import java.time.Clock;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Program {
     
@@ -334,6 +337,69 @@ public class Program {
         }
         */
         
+        /*Trabalhando com listas 
+        List <String> list = new ArrayList<>();
+        
+        list.add("Marcia");
+        list.add("Joao");
+        list.add("Bruno");
+        list.add("Marcus");
+        
+        for(String x : list){
+            System.out.println(x);
+        }
+        
+        System.out.println();
+        
+        list.add(2,"Marco");
+        
+        for(String x : list){
+            System.out.println(x);
+        }
+        
+        System.out.println();
+        System.out.println(list.size());
+
+        list.remove("Marco");
+        for(String x : list){
+            System.out.println(x);
+        }
+        
+        list.remove(2);
+        System.out.println();
+        
+        for(String x : list){
+            System.out.println(x);
+        }
+        
+        list.removeIf(x -> x.charAt(0) == 'J');
+        for(String x : list){
+            System.out.println(x);
+        }
+        
+        System.out.println("Index of Marcia: " + list.indexOf("Marcia"));
+        System.out.println("Index of Joao: " + list.indexOf("Joao")); /*se não está na lista retorna -1
+        
+        list.add("Marcia");
+        list.add("Joao");
+        list.add("Bruno");
+        list.add("Marcus");
+        
+        System.out.println("---------------------");
+        for(String x : list){
+            System.out.println(x);
+        }
+        
+        List<String> result = list.stream().filter(x -> x.charAt(0) == 'M').collect(Collectors.toList());
+        
+        System.out.println("---------------------");
+        for(String x : result){
+            System.out.println(x);
+        }
+        System.out.println("---------------------");
+        String name = list.stream().filter(x -> x.charAt(0) == 'M').findFirst().orElse(null);
+        System.out.println(name);
+        */
         sc.close();
     }
     
