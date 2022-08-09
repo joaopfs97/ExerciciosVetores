@@ -218,6 +218,29 @@ public class Program {
         }
         */
         
+        /* Exercicio 9
+        int n;
+        System.out.print("Quantas pessoas você vai digitar? ");
+        n = sc.nextInt();
+        String[] vectNome = new String[n];
+        int[] vectIdade = new int[n];
+        int maisVelho = 0;
+        int posicaoMaisVelho = 0;
+        
+        for(int i = 0; i < vectNome.length; i++){
+            System.out.println("Dados da " + (i+1) + "a pessoa:");
+            System.out.print("Nome: ");
+            vectNome[i] = sc.next();
+            System.out.print("Idade: ");
+            vectIdade[i] = sc.nextInt();
+            if(vectIdade[i] > maisVelho){
+                posicaoMaisVelho = i;
+                maisVelho = vectIdade[i];
+            }
+        }
+        
+        System.out.println("PESSOA MAIS VELHA: " + vectNome[posicaoMaisVelho]);
+        */
         
         sc.close();
     }
