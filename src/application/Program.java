@@ -327,9 +327,9 @@ public class Program {
         }
         
         System.out.println("Busy rooms:");
-        for(int i = 0; i < vect.length; i++){
-            if(vect[i] != null){
-                System.out.println(vect[i]);
+        for(Reserva reserva : vect){
+            if(reserva != null){
+                System.out.println(reserva);
             }
         }
         */
