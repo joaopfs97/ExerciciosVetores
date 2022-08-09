@@ -119,6 +119,52 @@ public class Program {
         System.out.println("QUANTIDADE DE PARES = " + qtdPares);
         */
         
+        /* Exercicio 5
+        int n;
+        System.out.println("Quantos numeros você vai digitar? ");
+        n = sc.nextInt();
+        int[] vect = new int[n];
+        int maiorValor = 0;
+        int posicaoMaiorValor = 0;
+        
+        for (int i = 0; i < vect.length; i++){
+            System.out.print("Digite um valor: ");
+            vect[i] = sc.nextInt();
+            if(vect[i] > maiorValor){
+                maiorValor = vect[i];
+                posicaoMaiorValor = i;
+            }
+        }
+        
+        System.out.println();
+        System.out.println("MAIOR VALOR = " + maiorValor);
+        System.out.println("POSICAO DO MAIOR VALOR = " + posicaoMaiorValor);
+        */
+        
+        /* Exercicio 6
+        int n;
+        System.out.println("Quantos valores vai ter cada vetor? ");
+        n = sc.nextInt();
+        int[] vectA = new int[n];
+        int[] vectB = new int[n];
+        int[] vectC = new int [n];
+        
+        System.out.println("Digite os valores de A:");
+        for (int i = 0; i < vectA.length; i++){
+            vectA[i] = sc.nextInt();
+        }
+        
+        System.out.println("Digite os valores de B:");
+        for (int i = 0; i < vectB.length; i++){
+            vectB[i] = sc.nextInt();
+            vectC[i] = vectB[i] + vectA[i];
+        }
+        
+        System.out.println("VETOR RESULTANTE:");
+        for (int i = 0; i < vectB.length; i++){
+           System.out.println(vectC[i]);
+        }
+        */
         
         
         sc.close();
