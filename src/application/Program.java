@@ -242,6 +242,71 @@ public class Program {
         System.out.println("PESSOA MAIS VELHA: " + vectNome[posicaoMaisVelho]);
         */
         
+        /* Exercicio 10
+        int n;
+        System.out.print("Quantos alunos serao digitados? ");
+        n = sc.nextInt();
+        Aluno[] vect = new Aluno[n];
+        for(int i = 0; i < vect.length; i++){
+            System.out.printf("Digite o nome, primeira e segunda nota do %do aluno", (i+1));
+            System.out.println();
+            String nome = sc.next();
+            double nota1 = sc.nextDouble();
+            double nota2 = sc.nextDouble(); 
+            vect[i] = new Aluno(nome, nota1, nota2);
+            vect[i].calculaMedia();
+            vect[i].Situacao();
+        }
+        
+        System.out.println("Alunos aprovados:");
+        for(int i = 0; i < vect.length; i++){
+            if(vect[i].getSituacao().equals("APROVADO")){
+                System.out.println(vect[i].getNome());
+            }
+        }
+        */
+        
+        /* Exercicio 11
+        
+        int n;
+        System.out.print("Quantas pessoas serao digitas? ");
+        n = sc.nextInt();
+        Pessoa[] vect = new Pessoa[n];
+        double sumAlturaMulheres = 0;
+        int numeroMulheres = 0;
+        int numeroHomens = 0;
+        double menorAltura = 10;
+        double maiorAltura = 0;
+        
+        for (int i = 0; i < vect.length; i++){
+            System.out.printf("Altura da %da pessoa: ",i+1);
+            double altura = sc.nextDouble();
+            System.out.printf("Genero da %da pessoa: ",i+1);
+            String sexo = sc.next();
+            vect[i] = new Pessoa(altura, sexo);
+            
+            if(altura < menorAltura){
+                menorAltura = altura;
+            }
+            if(altura > maiorAltura){
+                maiorAltura = altura;
+            }
+            
+            if(sexo.equals("F")){
+                sumAlturaMulheres += altura;
+                numeroMulheres += 1;
+            }
+            else{
+                numeroHomens +=1;
+            }
+        }
+        
+        System.out.println("Menor altura = " + menorAltura);
+        System.out.println("Maior altura = " + maiorAltura);
+        System.out.printf("Media das alturas das mulheres = %.2f\n", (sumAlturaMulheres / numeroMulheres));
+        System.out.println("Numero de homens = " + numeroHomens);
+        */
+        
         sc.close();
     }
     
