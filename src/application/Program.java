@@ -1,6 +1,6 @@
 package application;
 
-import entities.Pessoa;
+import entities.Reserva;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -305,6 +305,33 @@ public class Program {
         System.out.println("Maior altura = " + maiorAltura);
         System.out.printf("Media das alturas das mulheres = %.2f\n", (sumAlturaMulheres / numeroMulheres));
         System.out.println("Numero de homens = " + numeroHomens);
+        */
+        
+        /*Desafio Pensionato
+        Reserva[] vect = new Reserva[10];
+        int n;
+        System.out.print("How many rooms will be rented? ");
+        n = sc.nextInt();
+        
+        for(int i = 0; i < n; i++){
+            System.out.println("Rent #" + (i+1) + ": ");
+            System.out.print("Name: ");
+            sc.nextLine();
+            String nome = sc.nextLine();
+            System.out.print("Email: ");
+            String email = sc.nextLine();
+            System.out.print("Room: ");
+            int room = sc.nextInt();
+            vect[room] = new Reserva(nome, email, room);
+            System.out.println();
+        }
+        
+        System.out.println("Busy rooms:");
+        for(int i = 0; i < vect.length; i++){
+            if(vect[i] != null){
+                System.out.println(vect[i]);
+            }
+        }
         */
         
         sc.close();
